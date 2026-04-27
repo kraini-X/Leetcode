@@ -28,7 +28,6 @@ class Solution:
                     dfs(nei,visited,allowed)
         
         solve(0,[])
-        print(subsets)
         count=0
         for sb in subsets:
             sums=0
