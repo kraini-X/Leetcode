@@ -26,7 +26,6 @@ class Solution:
                     break
                 if bn[i]=="1":
                     ans+=i
-            print(ans)
             if valid and ans<=k:
                 final.append(bn)
         return final
