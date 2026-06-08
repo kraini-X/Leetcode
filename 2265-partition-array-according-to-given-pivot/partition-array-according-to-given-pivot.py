@@ -12,9 +12,6 @@ class Solution:
                 less.append(num)
             elif num>pivot:
                 greater.append(num)
-        print(count)
-        print(less)
-        print(greater)
         idx=0
         j=0
         for i in range(len(less)):
@@ -41,8 +38,6 @@ class Solution:
                 res[idx]=greater[j]
                 idx+=1
                 j+=1
-
-        print(idx)
         
         return res
         
