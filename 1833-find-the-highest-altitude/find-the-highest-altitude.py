@@ -5,5 +5,5 @@ class Solution:
         prefix[0]=gain[0]
         for i in range(1,n):
             prefix[i]=prefix[i-1]+gain[i]
-        print(prefix)
+
         return max(prefix)       
