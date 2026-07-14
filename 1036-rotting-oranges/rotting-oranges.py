@@ -15,10 +15,11 @@ class Solution:
                     fresh+=1
 
         time=0
-
-        while q and fresh!=0:
+        if fresh == 0:
+            return 0
+        while q:
             for _ in range(len(q)):
-
+                
                 r,c=q.popleft()
 
                 for dr,dc in directions:
@@ -29,8 +30,10 @@ class Solution:
                         fresh-=1
                         grid[nr][nc]=2
                         q.append([nr,nc])
+
+                        if fresh==0:
+                            return time+1
+
             time+=1
-        if fresh==0:
-            return time
         return -1
                 
