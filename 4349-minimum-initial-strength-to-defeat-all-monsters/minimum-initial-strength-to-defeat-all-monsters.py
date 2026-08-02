@@ -25,7 +25,6 @@ class Solution:
         
         low=0
         high=sum(monsters)
-        #print(high)
         while low<=high:
             mid=(low+high)//2
 
