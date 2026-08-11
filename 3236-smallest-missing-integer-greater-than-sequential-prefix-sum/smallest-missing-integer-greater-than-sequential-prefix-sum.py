@@ -11,8 +11,7 @@ class Solution:
 
         while i < n and nums[i] == nums[i - 1] + 1:
             i += 1
-        #print(prefix)
-        #print(i)
+
         temp=prefix[i-1]
 
         if temp not in nums:
