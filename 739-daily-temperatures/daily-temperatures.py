@@ -4,9 +4,10 @@ class Solution:
         
         n=len(arr)
         ans=[0]*n
+        
         for i in range(n-1,-1,-1):
 
-            while stack and arr[i]>=arr[stack[-1]]:
+            while stack and arr[stack[-1]]<=arr[i]:
                 stack.pop()
             
             if stack:
@@ -14,5 +15,5 @@ class Solution:
             
             stack.append(i)
         return ans
-
+         
         
